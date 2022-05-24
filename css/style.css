@@ -1,0 +1,103 @@
+/************************************
+               COMMON
+*************************************/
+img {
+    width: 100%;
+}
+
+.ms_flex {
+    display: flex;
+}
+
+
+
+
+
+/************************************
+               HEADER
+*************************************/
+.header_sony {
+    height: 40px;
+    background-color: black;
+    text-align: right;
+    line-height: 35px;
+}
+
+.header_sony img {
+    width: 80px;
+    margin-right: 15px;
+}
+
+.main_header {
+    height: 70px;
+    font-size: 30px;
+    position: fixed;
+    width: 100%;
+    /* test */
+    background-color: bisque;
+}
+
+.main_header img {
+    width: 55px;
+}
+
+.main_header_container {
+    margin: 0 15px;
+    padding-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_header_container i {
+    color: #a2a1a1;
+    border: 1px solid #cac4c4;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+
+
+/************************************
+                MAIN
+*************************************/
+
+
+
+
+
+
+
+
+
+/************************************
+               FOOTER
+*************************************/
+
+
+
+
+
+
+
+
+
+
+
+/************************************
+            MEDIA QUERY
+*************************************/
+/* SM Screen */
+@media screen and (min-width: 576px){
+    
+}
+
+
+/* MD Screen */
+@media screen and (min-width: 768px){
+    
+}
+
+
+/* LG Screen */
+@media screen and (min-width: 992px){
+    
+}
