@@ -3,6 +3,7 @@
     --b-btn: black;
     --blue-btn: #2d64e6;
     --orange-btn: #cd3d0f;
+    --light_grey-btn: #d9dadc;
 }
 
 
@@ -55,6 +56,10 @@ a:hover {
     background-size: cover;
     background-position: center;
     position: relative;
+}
+
+.banner_playstation {
+    height: 350px;
 }
 /************************************
                HEADER
@@ -163,7 +168,8 @@ a:hover {
     justify-content: flex-end;
 }
 
-.img_container {
+.jumbotron_top .img_container,
+.jumbotron_middle .img_container {
     width: 300px;
 }
 
@@ -320,8 +326,45 @@ a:hover {
 }
 
 
+/* Section 7 Banner Plus */
+.banner_playstation.plus {
+    background-color: #bebcbb;;
+}
 
+.banner_playstation .banner_logo img {
+    width: 350px;
+}
 
+.banner_playstation .container {
+    height: 100%;
+}
+
+.banner_playstation .row {
+    height: 100%;
+    align-items: flex-end;
+}
+
+.banner_playstation .ms_button a {
+    background-color: var(--light_grey-btn);
+    color: var(--blue-btn);
+    font-weight: 600;
+}
+
+.banner_playstation .banner_left p {
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.banner_right {
+    display: none;
+}
+
+.banner_right img {
+    height: 270px;
+    object-fit: cover;
+    width: 365px;
+    /* margin-left: 50px; */
+}
 
 
 
@@ -379,9 +422,24 @@ a:hover {
     .playstation_card_name {
         display: block;
     }
-
-    /* Section 4 Jumbotron middle -------*/
     
+    /* Section 7 Banner Plus */
+    .banner_playstation .row {
+        align-items: center;
+    }
+
+    .banner_playstation {
+        height: 270px;
+    }
+
+    .banner_playstation .banner_logo img {
+        width: 250px;
+    }
+
+    .banner_right {
+        display: block;
+    }
+
 }
 
 
@@ -405,11 +463,15 @@ a:hover {
 
     /* MAIN --------------------------*/
     /* Jumbotron 1 */
+    .jumbotron {
+        height: 650px;
+    }
     .jumbotron_top {
         width: 33%;
     }
 
-    .img_container {
+    .jumbotron_top .img_container,
+    .jumbotron_middle .img_container {
         width: 200px;
     }
 
@@ -424,7 +486,23 @@ a:hover {
     /* Section 4 Jumbotron middle */
     .jumbotron_middle{
        width: 32%;
+       padding-bottom: 30px;
     }
 
-    
+    /* Section 7 Banner Plus */
+    .banner_playstation {
+        height: 350px;
+    }
+
+    .banner_right img {
+        height: 350px;
+        width: 470px;
+    }
+} 
+
+@media screen and (min-width: 1200px) {
+     /* Section 4 Jumbotron middle */
+    .jumbotron_middle .img_container {
+        width: 300px;
+    }
 }
