@@ -1,6 +1,8 @@
 /* ROOT */
 :root {
     --b-btn: black;
+    --blue-btn: #2d64e6;
+    --orange-btn: #cd3d0f;
 }
 
 
@@ -167,7 +169,7 @@ a:hover {
 }
 
 .jumbotron .ms_button a{
-    background-color: #cd3d0f;
+    background-color: var(--orange-btn);
     margin-bottom: 60px;
 }
 
@@ -241,7 +243,7 @@ a:hover {
 }
 
 .console_playstation .ms_button a{
-    background-color: #2d64e6;
+    background-color: var(--blue-btn);
     font-weight: 600;
 }
 
