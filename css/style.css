@@ -48,6 +48,13 @@ a:hover {
     transform: scale(1.1);
 }
 
+.jumbotron {
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
 /************************************
                HEADER
 *************************************/
@@ -139,21 +146,16 @@ a:hover {
                 MAIN
 *************************************/
 /* Section 1 Jumbotron 1 ----------------------------*/
-.jumbotron {
-    height: 550px;
+.jumbotron.top{
     background-image: url(../img/jumbo-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     margin-top: 70px;
-    position: relative;
 }
 
 .jumbotron .container {
     height: 100%;
 }
 
-.jumbotron_top.content {
+.jumbotron .content {
     height: 100%;
     color: white;
     flex-direction: column;
@@ -164,17 +166,17 @@ a:hover {
     width: 300px;
 }
 
-.jumbotron_top .ms_button a{
+.jumbotron .ms_button a{
     background-color: #cd3d0f;
     margin-bottom: 60px;
 }
 
-.jumbotron_top .ms_text h1 {
+.jumbotron .ms_text h1 {
     padding-top: 25px;
     font-size: 2.5rem;
 }
 
-.jumbotron_top .ms_text p {
+.jumbotron .ms_text p {
     padding: 17px 0;
 }
 
@@ -266,7 +268,14 @@ a:hover {
     opacity: 1;
 }
 
+/* Section 4 Jumbotron middle */ 
+.jumbotron.middle {
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+}
 
+.jumbotron.middle .ms_button a {
+    margin-bottom: 20px;
+  }
 
 
 /************************************
@@ -286,6 +295,14 @@ a:hover {
 /************************************
             MEDIA QUERY
 *************************************/
+@media screen and (min-width: 500px) {
+    /* Section 4 Jumbotorn Middle */
+    .jumbotron.middle .ms_button a {
+        margin-bottom: 60px;
+      }
+}
+
+
 /* SM Screen */
 @media screen and (min-width: 576px){
     /* Order -----------------------*/
@@ -293,6 +310,7 @@ a:hover {
    .ratchet {
         order: 1;
     }
+
 }
 
 
@@ -312,6 +330,8 @@ a:hover {
     .playstation_card_name {
         display: block;
     }
+
+    /* Section 4 Jumbotron middle -------*/
     
 }
 
@@ -337,18 +357,25 @@ a:hover {
     /* MAIN --------------------------*/
     /* Jumbotron 1 */
     .jumbotron_top {
-        width: 30%;
+        width: 33%;
     }
 
     .img_container {
         width: 200px;
     }
 
-    .jumbotron_top .ms_text p {
+    .jumbotron .ms_text p {
         font-size: 0.85rem;
     }
 
-    .jumbotron_top .ms_text h1 {
+    .jumbotron .ms_text h1 {
         font-size: 2.2rem;
     }
+
+    /* Section 4 Jumbotron middle */
+    .jumbotron_middle{
+       width: 32%;
+    }
+
+    
 }
