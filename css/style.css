@@ -38,7 +38,7 @@ a:hover {
 .btn {
     color: white;
     border-radius: 30px;
-    padding: 5px 12px;
+    padding: 8px 12px;
     font-size: 0.9rem;
     transition: 1s;
 }
@@ -70,6 +70,7 @@ a:hover {
     position: fixed;
     width: 100%;
     z-index: 100;
+    background-color: white;
 }
 
 /* Main Header Small */
@@ -201,8 +202,69 @@ a:hover {
     transform: scale(1.1);
 }
 
+/* Section 3 Console Playstation ---------*/
+.console_playstation {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+.preview.text {
+    text-align: center;
+}
 
+.console_playstation .text h2 {
+    font-size: 2.5rem;
+    padding-bottom: 17px;
 
+}
+
+.console_playstation .text span {
+    font-size: 0.8rem;
+    color: #0072ce;
+    font-weight: 600;
+}
+
+.console_playstation .text p {
+    font-size: 1.3rem;
+    color: #767676;
+    padding-bottom: 50px;
+} 
+
+.console_playstation .info_playstation.text p {
+    padding-bottom: 10px;
+}
+
+/* Container more info */
+.try_more_info {
+    padding-bottom: 30px;
+}
+
+.console_playstation .ms_button a{
+    background-color: #2d64e6;
+    font-weight: 600;
+}
+
+/* Playstation Cards */
+.console_playstation .playstation_cards .container img {
+    opacity: 0.5;
+}
+
+.playstation_card_name {
+    text-align: center;
+    display: none;
+    opacity: 0.5;
+}
+
+/* Hover-------------------- */
+.console_playstation .playstation_cards .col-4.col-md-2:hover:after {
+    content: "";
+    border-bottom: 2px solid #2d64e6;
+    display: block;
+}
+
+.console_playstation .selected_items:hover img,
+.console_playstation .selected_items:hover .playstation_card_name {
+    opacity: 1;
+}
 
 
 
@@ -236,6 +298,20 @@ a:hover {
 
 /* MD Screen */
 @media screen and (min-width: 768px){
+    /* MAIN---------------------------- */
+    /* Section 3 -----------------------*/
+    .console_playstation .text p {
+        padding-bottom: 30px;
+    }
+
+    /* Playstation Cards */
+    .playstation_cards .row {
+        justify-content: space-between;
+    }
+
+    .playstation_card_name {
+        display: block;
+    }
     
 }
 
@@ -247,7 +323,7 @@ a:hover {
    .ratchet {
         order: 0;
     }
-}
+
     /* HEADER---------------------- */
     /* Main Header Small */
     .main_header.small {
