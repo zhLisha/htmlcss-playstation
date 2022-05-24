@@ -1,17 +1,48 @@
+/* ROOT */
+:root {
+    --b-btn: black;
+}
+
+
 /************************************
                COMMON
 *************************************/
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    font-family: Helvetica, arial, sans-serif;
+}
+
 img {
     width: 100%;
 }
 
-.ms_flex {
-    display: flex;
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
+a:hover {
+    color: inherit;
+}
 
+.btn {
+    color: white;
+    border-radius: 30px;
+    padding: 3px 12px;
+}
 
+.btn:hover {
+    color: white;
+}
 
 /************************************
                HEADER
@@ -28,15 +59,18 @@ img {
     margin-right: 15px;
 }
 
+/* Main Header Common */
 .main_header {
     height: 70px;
     font-size: 30px;
     position: fixed;
     width: 100%;
+    z-index: 100;
     /* test */
     background-color: bisque;
 }
 
+/* Main Header Small */
 .main_header img {
     width: 55px;
 }
@@ -48,14 +82,58 @@ img {
     align-items: center;
 }
 
-.main_header_container i {
+.main_header.small .main_header_container i {
     color: #a2a1a1;
     border: 1px solid #cac4c4;
     padding: 5px 15px;
     border-radius: 4px;
 }
 
+/* Main Header Big */
+.main_header.big {
+    font-size: 15px;
+    font-weight: 600;
+    display: none;
+}
 
+.main_header.big .main_header_container {
+    align-items: center;
+}
+
+.main_header .main_header.big a{
+    padding-right: 7px;
+}
+
+.main_header .arrow {
+    width: 10px;
+    margin-left: 5px;
+}
+
+.main_header.big ul {
+    align-items: center;
+}
+
+.main_header.big ul li.d-flex {
+    padding: 0 13px;
+}
+
+
+/* Right */
+
+.main_header_right .search {
+    width: 10px;
+}
+
+.main_header .search {
+    width: 20px;
+    margin-left: 10px;
+}
+
+.btn.login {
+    background-color: var(--b-btn);
+    margin: 0 15px;
+    font-size: 15px;
+}
 /************************************
                 MAIN
 *************************************/
@@ -99,5 +177,11 @@ img {
 
 /* LG Screen */
 @media screen and (min-width: 992px){
-    
+    /* HEADER---------------------- */
+    /* Main Header Big */
+    .main_header.big {
+        display: block;
+    }
+
+
 }
