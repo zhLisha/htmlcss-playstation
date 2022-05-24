@@ -137,7 +137,7 @@ a:hover {
 /************************************
                 MAIN
 *************************************/
-/* Jumbotron 1 */
+/* Section 1 Jumbotron 1 ----------------------------*/
 .jumbotron {
     height: 550px;
     background-image: url(../img/jumbo-bg.png);
@@ -177,6 +177,30 @@ a:hover {
     padding: 17px 0;
 }
 
+/* Section 2 Card Game-------------------- */
+.card_game_container {
+    padding: 35px 0;
+}
+.card_game {
+    padding-bottom: 23px;
+}
+.card_game img{
+    border-radius: 20px;
+}
+
+.col-6:first-child .card_game img{
+    border: 2px solid #0072ce;
+    border-radius: 20px;
+    padding: 3px;
+    transition: 1s;
+}
+
+/* Hover---------- */
+
+.col-6:first-child .card_game img:hover {
+    transform: scale(1.1);
+}
+
 
 
 
@@ -202,7 +226,11 @@ a:hover {
 *************************************/
 /* SM Screen */
 @media screen and (min-width: 576px){
-    
+    /* Order -----------------------*/
+    /* Section 2 */
+   .ratchet {
+        order: 1;
+    }
 }
 
 
@@ -214,6 +242,12 @@ a:hover {
 
 /* LG Screen */
 @media screen and (min-width: 992px){
+    /* Order -----------------------*/
+    /* Section 2 */
+   .ratchet {
+        order: 0;
+    }
+}
     /* HEADER---------------------- */
     /* Main Header Small */
     .main_header.small {
