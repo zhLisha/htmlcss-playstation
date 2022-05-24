@@ -19,7 +19,6 @@ header {
 
 img {
     width: 100%;
-    height: 100%;
 }
 
 ul {
@@ -299,6 +298,32 @@ a:hover {
     padding: 10px 0;
     font-size: 1.11rem;
 }
+
+/* Section 6 New release ------------*/
+.console_playstation.four {
+    padding: 70px 0;
+}
+.console_playstation.four .text p {
+    padding-bottom: 20px;
+} 
+
+.console_playstation.four .text h2 {
+    font-size: 2.3rem;
+}
+
+.console_playstation.four .col-12 {
+    padding-bottom: 50px;
+}
+
+.console_playstation.four .row {
+    padding-top: 30px;
+}
+
+
+
+
+
+
 
 
 
