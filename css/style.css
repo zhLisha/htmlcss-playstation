@@ -17,6 +17,7 @@ header {
 
 img {
     width: 100%;
+    height: 100%;
 }
 
 ul {
@@ -37,11 +38,14 @@ a:hover {
 .btn {
     color: white;
     border-radius: 30px;
-    padding: 3px 12px;
+    padding: 5px 12px;
+    font-size: 0.9rem;
+    transition: 1s;
 }
 
 .btn:hover {
     color: white;
+    transform: scale(1.1);
 }
 
 /************************************
@@ -66,8 +70,6 @@ a:hover {
     position: fixed;
     width: 100%;
     z-index: 100;
-    /* test */
-    background-color: bisque;
 }
 
 /* Main Header Small */
@@ -119,7 +121,6 @@ a:hover {
 
 
 /* Right */
-
 .main_header_right .search {
     width: 10px;
 }
@@ -132,13 +133,49 @@ a:hover {
 .btn.login {
     background-color: var(--b-btn);
     margin: 0 15px;
-    font-size: 15px;
 }
 /************************************
                 MAIN
 *************************************/
+/* Jumbotron 1 */
+.jumbotron {
+    height: 550px;
+    background-image: url(../img/jumbo-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 70px;
+    position: relative;
+}
 
+.jumbotron .container {
+    height: 100%;
+}
 
+.jumbotron_top.content {
+    height: 100%;
+    color: white;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.img_container {
+    width: 300px;
+}
+
+.jumbotron_top .ms_button a{
+    background-color: #cd3d0f;
+    margin-bottom: 60px;
+}
+
+.jumbotron_top .ms_text h1 {
+    padding-top: 25px;
+    font-size: 2.5rem;
+}
+
+.jumbotron_top .ms_text p {
+    padding: 17px 0;
+}
 
 
 
@@ -178,10 +215,30 @@ a:hover {
 /* LG Screen */
 @media screen and (min-width: 992px){
     /* HEADER---------------------- */
+    /* Main Header Small */
+    .main_header.small {
+        display: none;
+    }
     /* Main Header Big */
     .main_header.big {
         display: block;
     }
 
+    /* MAIN --------------------------*/
+    /* Jumbotron 1 */
+    .jumbotron_top {
+        width: 30%;
+    }
 
+    .img_container {
+        width: 200px;
+    }
+
+    .jumbotron_top .ms_text p {
+        font-size: 0.85rem;
+    }
+
+    .jumbotron_top .ms_text h1 {
+        font-size: 2.2rem;
+    }
 }
