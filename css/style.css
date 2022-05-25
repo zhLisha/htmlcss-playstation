@@ -61,6 +61,30 @@ a:hover {
 .banner_playstation {
     height: 350px;
 }
+
+.banner_playstation {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right 70px top 0;
+}
+
+.text h2 {
+    font-size: 2.5rem;
+    padding-bottom: 17px;
+
+}
+
+.text span {
+    font-size: 0.8rem;
+    color: #0072ce;
+    font-weight: 600;
+}
+
+.text p {
+    font-size: 1.3rem;
+    color: #767676;
+    padding-bottom: 50px;
+} 
 /************************************
                HEADER
 *************************************/
@@ -220,24 +244,6 @@ a:hover {
     text-align: center;
 }
 
-.console_playstation .text h2 {
-    font-size: 2.5rem;
-    padding-bottom: 17px;
-
-}
-
-.console_playstation .text span {
-    font-size: 0.8rem;
-    color: #0072ce;
-    font-weight: 600;
-}
-
-.console_playstation .text p {
-    font-size: 1.3rem;
-    color: #767676;
-    padding-bottom: 50px;
-} 
-
 .console_playstation .info_playstation.text p {
     padding-bottom: 10px;
 }
@@ -327,12 +333,6 @@ a:hover {
 
 
 /* Section 7 Banner Plus */
-.banner_playstation {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right 70px top 0;
-}
-
 .banner_playstation.plus {
     background-color: #bebcbb;
 }
@@ -348,6 +348,7 @@ a:hover {
 .banner_playstation .ms_button a {
     background-color: var(--light_grey-btn);
     color: var(--blue-btn);
+
     font-weight: 600;
 }
 
@@ -361,7 +362,24 @@ a:hover {
     align-items: center;
 }
 
-/* ----------------- */
+
+/* Section 8 Discount */
+.discount {
+    text-align: center;
+    padding: 60px 0;
+}
+.discount_card {
+    padding: 25px 0
+}
+
+.discount .text p {
+    padding-bottom: 30px;
+}
+
+
+
+
+
 
 /************************************
                FOOTER
@@ -421,7 +439,7 @@ a:hover {
     }
 
     .banner_playstation {
-        height: 270px;
+        height: 300px;
     }
 
     .banner_playstation.plus {
