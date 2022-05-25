@@ -396,9 +396,20 @@ a:hover {
 }
 
 
+/* Section 10 Social */
+.social {
+    padding: 60px 0;
+    text-align: center;
+}
 
+.social h2 {
+    font-size: 2rem;
+    padding-bottom: 30px;
+}
 
-
+.social_card {
+    padding: 15px 0;
+}
 
 
 
