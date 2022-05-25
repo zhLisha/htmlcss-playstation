@@ -327,21 +327,22 @@ a:hover {
 
 
 /* Section 7 Banner Plus */
-.banner_playstation.plus {
-    background-color: #bebcbb;;
+.banner_playstation {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right 70px top 0;
 }
 
-.banner_playstation .banner_logo img {
-    width: 350px;
+.banner_playstation.plus {
+    background-color: #bebcbb;
 }
 
 .banner_playstation .container {
     height: 100%;
 }
 
-.banner_playstation .row {
-    height: 100%;
-    align-items: flex-end;
+.banner_playstation .banner_logo img {
+    width: 350px;
 }
 
 .banner_playstation .ms_button a {
@@ -355,20 +356,12 @@ a:hover {
     padding-bottom: 15px;
 }
 
-.banner_right {
-    display: none;
+.banner_left {
+    height: 100%;
+    align-items: center;
 }
 
-.banner_right img {
-    height: 270px;
-    object-fit: cover;
-    width: 365px;
-    /* margin-left: 50px; */
-}
-
-
-
-
+/* ----------------- */
 
 /************************************
                FOOTER
@@ -402,7 +395,6 @@ a:hover {
    .ratchet {
         order: 1;
     }
-
 }
 
 
@@ -432,12 +424,16 @@ a:hover {
         height: 270px;
     }
 
-    .banner_playstation .banner_logo img {
-        width: 250px;
+    .banner_playstation.plus {
+        background-image: url(../img/ps-plus-april-monthly-games-featured-image-block.png);
     }
 
-    .banner_right {
-        display: block;
+    .banner_left {
+        width: 50%;
+    }
+
+    .banner_playstation .banner_logo img {
+        width: 250px;
     }
 
 }
@@ -493,10 +489,12 @@ a:hover {
     .banner_playstation {
         height: 350px;
     }
+    .banner_left {
+        width: 60%;
+    }
 
-    .banner_right img {
-        height: 350px;
-        width: 470px;
+    .banner_playstation .banner_logo img {
+        width: 350px;
     }
 } 
 
