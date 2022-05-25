@@ -55,7 +55,6 @@ a:hover {
     height: 600px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     position: relative;
 }
 
@@ -63,10 +62,10 @@ a:hover {
     height: 350px;
 }
 
-.banner_playstation {
+.banner_playstation .container {
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: right 50px top 0;
+    background-position: right 0 top 0;
 }
 
 .text h2 {
@@ -180,6 +179,7 @@ a:hover {
 .jumbotron.top{
     background-image: url(../img/jumbo-bg.png);
     margin-top: 70px;
+    background-position: top;
 }
 
 .jumbotron .container {
@@ -285,6 +285,7 @@ a:hover {
 /* Section 4 Jumbotron middle ----------*/ 
 .jumbotron.middle {
     background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    background-position: center;
 }
 
 .jumbotron.middle .ms_button a {
@@ -411,22 +412,52 @@ a:hover {
     padding: 15px 0;
 }
 
-
-
-
 /************************************
                FOOTER
 *************************************/
+footer {
+    background-color: #00439c;
+    padding: 100px 0 50px 0;
+    color: white;
+}
 
+.footer_logo {
+    width: 120px;
+}
+.choose_language {
+    padding: 40px 0;
+}
 
+.choose_language img{
+    width: 24px;
+    margin-right: 13px;
+}
 
+.choose_language img,
+.choose_language span {
+    vertical-align: middle;
+}
 
+.ms_container_footer {
+    padding-left: 42px;
+    line-height: 40px;
+}
 
+/* Copyright */
+.copyright {
+    padding: 60px 0;
+}
+.sie_logo {
+    width: 150px;
+}
 
+.copyright .text {
+    padding:  15px 0;
+}
 
-
-
-
+.copyright .text a {
+    text-decoration: underline;
+}
 
 /************************************
             MEDIA QUERY
@@ -475,7 +506,7 @@ a:hover {
         height: 300px;
     }
 
-    .banner_playstation.plus {
+    .banner_playstation.plus .container{
         background-image: url(../img/ps-plus-april-monthly-games-featured-image-block.png);
     }
 
@@ -487,8 +518,12 @@ a:hover {
         width: 250px;
     }
 
+    .banner_left .text p {
+        font-size: 1.1rem;
+    }
+
     /* Section 9 Banner Now */
-    .banner_playstation.now {
+    .banner_playstation.now .container{
         background-image: url(../img/ps-now-april-featured-image-block.png);
         background-position: right 40px top 0;
     }
@@ -517,6 +552,7 @@ a:hover {
     /* Jumbotron 1 */
     .jumbotron {
         height: 650px;
+        background-position: top 10px;
     }
     .jumbotron_top {
         width: 33%;
@@ -552,6 +588,7 @@ a:hover {
     .banner_playstation .banner_logo img {
         width: 350px;
     }
+
 } 
 
 @media screen and (min-width: 1200px) {
