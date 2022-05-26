@@ -1,0 +1,120 @@
+/* COMMON */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+/* Button */
+.btn {
+    color: white;
+    border-radius: 30px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    margin: 0 20px;
+}
+
+.btn.login {
+    background-color: black;
+    width: 100%;
+    margin: 0;
+}
+
+.btn.login:hover {
+    color: white;
+    outline: 3px solid black;
+    outline-offset: 2px;
+}
+
+/* Actions  */
+.offcanvas-body {
+    flex-grow: 0;
+}
+
+.arrow {
+    width: 15px;
+}
+
+hr.dropdown-divider {
+    height: 2px;
+}
+
+.link_hardware li {
+    margin: 0 20px;
+}
+
+.navbar-expand-lg .navbar-nav .showed_item {
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    width: fit-content;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-item {
+    white-space: normal;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: transparent;
+}
+
+.link_hardware {
+    list-style-type: square;
+    display: flex;
+    justify-content: center;
+}
+
+.offcanvas-body ul li .search {
+    width: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.offcanvas-body.right .arrow {
+    margin-right: 10px;
+}
+
+.dropdown-menu[data-bs-popper] {
+    margin: 1rem 0;
+}
+
+
+/* LG Screen */
+@media screen and (min-width: 992px){
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        border: none;
+    }
+
+    .offcanvas {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .navbar-expand-lg .navbar-nav {
+        align-items: center;
+    }
+
+    .navbar-expand-lg .navbar-nav .showed_item img {
+        width: 150px;
+    }
+
+    .btn.login {
+        width: fit-content;
+    }
+
+    .offcanvas-body ul li .search {
+        margin-top: 0;
+    }
+} 
+
