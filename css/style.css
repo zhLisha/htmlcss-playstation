@@ -43,13 +43,14 @@ a:hover {
     border-radius: 30px;
     padding: 8px 12px;
     font-size: 0.9rem;
-    transition: 1s;
 }
 
 .btn:hover {
     color: white;
-    transform: scale(1.1);
+    outline-offset: 3px;
+    transform: scale(0.95);
 }
+
 
 .jumbotron {
     height: 600px;
@@ -172,6 +173,12 @@ a:hover {
     background-color: var(--b-btn);
     margin: 0 15px;
 }
+
+/* Hover-------------- */
+.main_header .btn:hover {
+    outline: 2.5px solid black;
+}
+
 /************************************
                 MAIN
 *************************************/
@@ -212,6 +219,12 @@ a:hover {
     padding: 17px 0;
 }
 
+/* Hover-------------- */
+
+.jumbotron .btn:hover {
+    outline: 2.5px solid var(--orange-btn);
+}
+
 /* Section 2 Card Game-------------------- */
 .card_game_container {
     padding: 35px 0;
@@ -224,17 +237,20 @@ a:hover {
 }
 
 .card_game_container .col-6:first-child .card_game img{
-    border: 2px solid #0072ce;
-    border-radius: 20px;
-    padding: 3px;
+    outline: 2px solid var(--blue-btn);
+    outline-offset: 2px;
+}
+
+.card_game_container .col-6 .card_game img{
     transition: 1s;
 }
 
 /* Hover---------- */
 
-.card_game_container .col-6:first-child .card_game img:hover {
-    transform: scale(1.1);
+.card_game_container .col-6 .card_game img:hover {
+    transform: translate(0px, -15px);
 }
+
 
 /* Section 3 Console Playstation ---------*/
 .console_playstation {
@@ -260,6 +276,10 @@ a:hover {
 }
 
 /* Playstation Cards */
+.playstation_cards {
+    padding-bottom: 30px;
+}
+
 .console_playstation .playstation_cards .container img {
     opacity: 0.5;
 }
@@ -271,10 +291,16 @@ a:hover {
 }
 
 /* Hover-------------------- */
-.console_playstation .playstation_cards .col-4.col-md-2:hover:after {
+
+.console_playstation .btn:hover {
+    outline: 2.5px solid var(--blue-btn);
+}
+
+.console_playstation .playstation_cards .col-4.col-md-2:hover {
     content: "";
-    border-bottom: 2px solid #2d64e6;
+    border-bottom: 3px solid var(--blue-btn);
     display: block;
+    padding-top: 5px;
 }
 
 .console_playstation .selected_items:hover img,
